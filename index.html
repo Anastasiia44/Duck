@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duck🦆</title>
+    <style>
+      body {
+        background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+        background-attachment: fixed;
+        width: 50%;
+        margin: 40px auto;
+      }
+      h1 {
+        text-align: center;
+        color: #5585b5;
+      }
+      h2 {
+        text-align: center;
+        color: black;
+        line-height: 50px;
+        font-size: 20px;
+        border: 1px solid #5585b5;
+        border-radius: 4px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 100%;
+        border-radius: 15px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 15px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .container {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 20px 50px;
+      }
+      .learn_more {
+        display: block;
+        margin-top: 10px;
+        color: #5585b5;
+        text-decoration: none;
+      }
+      .learn_more:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 20px;
+        background: #5585b5;
+        color: white;
+        font-size: 17px;
+        box-shadow: 5px 5px 5px rgb(216, 213, 213);
+        border: 1px solid #5585b5;
+        border-radius: 50px;
+        transition: all 200ms linear;
+      }
+      button:hover {
+        color: #5585b5;
+        background: white;
+        cursor: pointer;
+      }
+      .bye {
+        color: #5585b5;
+        font-size: 17px;
+        text-align: center;
+        font-weight: normal;
+      }
+      .myName {
+        text-align: center;
+        color: #5585b5;
+        font-size: 18px;
+        font-weight: bolder;
+      }
+      .myName:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Birds!</h1>
+      <h2>Especially Ducks🦆</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/714/original/nyc-mandarin-duck_holly-mascaro.jpg?1652025086"
+        alt="Duck"
+        width="300"
+      />
+      <p>
+        <strong>Duck</strong> is the common name for numerous species of
+        waterfowl in the family Anatidae. Ducks are generally smaller and
+        shorter-necked than swans and geese, which are members of the same
+        family.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Duck"
+          target="_blank"
+          class="learn_more"
+        >
+          Learn more on wikipedia
+        </a>
+      </p>
+      <button>Find the Duck!</button>
+      <hr />
+      <div class="bye">
+        Coded by
+        <a
+          href="https://www.shecodesfoundation.org/candidates/anastasiia-maliuha-ukrainian"
+          target="_blank"
+          ><span class="myName"><em>Anastasiia</em></span></a
+        >
+      </div>
+    </div>
+    <script>
+      function find() {
+        let name = prompt("What is your name?");
+        let city = prompt("Where do you live?");
+        let age = prompt("How old are you?");
+        if (age < 18) {
+          alert("Sorry, " + name + "! You are too young to have a duck😓");
+        } else {
+          alert(
+            "Thank you, " + name + "! Look for your duck in " + city + "🦆😀"
+          );
+        }
+      }
+      let findButton = document.querySelector("button");
+      findButton.addEventListener("click", find);
+    </script>
+  </body>
+</html>
